@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+/* Whole Body CSS */
+body a:not(#logo, #readMore, [href="/"]):hover{
+    color: #b3cde0 !important;
+}
+#bodyColor{
+    background-color: #f9fafc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar CSS */
+#logo{
+    font-family: cursive;
+}
+.navbarCustom{
+    background-color: #e3e4e6 !important;
+    font-weight: bold;
+    box-shadow: 0px 6px #fddbff !important;
+}
+.navbar-brand, #themeLogo {
+    font-size: xx-large !important;
+    color: black !important;
+}
+.nav-link[href="/"]{
+    color: #ff084a !important;
+}
+.nav-link[href="/"]:hover{
+    color: #875211 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link{
+    color: #363b74 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* News Heading CSS */
+.newsTopic{
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+/* Card Content CSS */
+#multiCard, #singleCard{
+    font-family: sans-serif;
+    border: transparent !important;
+}
+#title{
+    font-weight: bold;
+    height: 75px;
+}
+#multiImg{
+    width: 100%;
+    height: 300px;
+}
+.content{
+    height: 75px;
+    text-align: justify;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: wrap;
+    margin-bottom: 0;
+    color: rgb(75, 75, 75);
+}
+.dateTime{
+    font-size: 14px !important;
+    color: gray;
+}
+#readMoreContainer{
+    height: 60px;
+}
+#readMore{
+    border-bottom: 1px solid red !important;
+    border-radius: 0 !important;
+    font-weight: bold;
+}
+#readMore:hover{
+    color: gray;
+    font-size: larger;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Single Card CSS */
+#singleCard{
+    width: 100%;
+    background-color: #f9fafc;
+}
+
+@media screen and (max-width: 600px) {
+    #singleImage{
+        height: 300px !important;
+        width: 100% !important;
+    }
+    #singleContent{
+        width: 95% !important;
+        margin-left: 1.4% !important;
+    }
+}
+#singleHead{
+    font-weight: bold;
+    font-size: larger;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+#divImg{
+    display: flex;
+    justify-content: center;
+}
+#singleImage{
+    width: 500px;
+    height: 450px;
+}
+#singleContent{
+    width: 60%;
+    margin-left: 18%;
+    text-align: justify;
+    color: rgb(75, 75, 75);
+    display: flex;
+    justify-content: center;
+}
+#singleDate{
+    font-size: medium;
+    color: gray;
+    display: flex;
+    justify-content: center;
+}
+/* Loading Button */
+.loading{
+    text-align: center;
+    padding-top: 300px;
+}
+.loadIcon{
+    font-size: 40px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+.loadText{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
